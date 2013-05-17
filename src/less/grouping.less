@@ -1,9 +1,9 @@
 @import 'colors.less';
 
 .ngGroupPanel {
-    background-color: rgb(234, 234, 234);
+    background-color: @panelColor;
     overflow: hidden;
-    border-bottom: 1px solid rgb(212,212,212);
+    border-bottom: 1px solid @borderColor;
 }
 
 .ngGroupList {
@@ -35,8 +35,8 @@
 }
 
 .ngGroupName {
-    background-color:  @lightGray; //rgb(247,247,247);
-    border: 1px solid @borderGray;
+    background-color: @lightGray;
+    border: 1px solid @borderColor;
     padding: 3px 10px;
     float: left;
     margin-left: 0;

@@ -1,16 +1,19 @@
+@rowColorEven: @lightGray;
+@rowColorOdd: @middleGray;
+
 .ngRow {
-    position: absolute;
-    border-bottom: 1px solid rgb(229, 229, 229);
+  position: absolute;
+  border-bottom: 1px solid @borderColor;
 }
 
 .ngRow.odd {
-    background-color: rgb(253, 253, 253);
+  background-color: @rowColorOdd; //rgb(253, 253, 253);
 }
 
 .ngRow.even {
-    background-color: rgb(243, 243, 243);
+  background-color: @rowColorEven;
 }
 
 .ngRow.selected {
-    background-color: rgb(201, 221, 225);
+  background-color: @grayBlue; //rgb(201, 221, 225);
 }

@@ -6,8 +6,8 @@
 }
 
 .ngHeaderCell {
-    border-right: 1px solid @borderGray;
-    border-left: 1px solid @borderGray;
+    border-right: 1px solid @borderColor;
+    border-left: 1px solid @borderColor;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -22,8 +22,8 @@
 .ngTopPanel {
     position: relative;
     z-index: 1;
-    background-color: rgb(234, 234, 234);
-    border-bottom: 1px solid rgb(212,212,212);
+    background-color: @darkGray; // #EAEAEA
+    border-bottom: 1px solid @borderColor; // #D4D4D4
 }
 
 .ngSortButtonDown {
@@ -58,7 +58,7 @@
     width: 14px;
     height: 14px;
     z-index: 1;
-    background-color: rgb(179, 191, 188);
+    background-color: @darkGrayGreen;
     cursor: pointer;
 }
 
@@ -119,5 +119,5 @@
     height: 0;
     border-style: solid;
     border-width: 6.5px 4.5px 0 4.5px;
-    border-color: #000 transparent transparent transparent;
+    border-color: @buttonColor transparent transparent transparent;
 }
