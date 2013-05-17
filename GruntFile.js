@@ -190,6 +190,14 @@
             templates: {
                 src: ["<%= ngtemplates.ngGrid.dest %>"]
             }
+        },
+        less: {
+            options: {
+                yuicompress: true
+            },
+            files: {
+                "ng-grid.css": "src/less/ng-grid.less"
+            }
         }
     });
 
@@ -207,6 +215,7 @@
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-less');
     //grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-jsdoc');
     grunt.loadNpmTasks('grunt-angular-templates');
