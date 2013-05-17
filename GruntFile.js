@@ -136,6 +136,10 @@
             debug: {
                 files: ['<%= srcFiles %>'],
                 tasks: ['debug']
+            },
+            less: {
+                files: ['src/less/**/*.less'],
+                tasks: ['less']
             }
         },
         ngtemplates: {
@@ -192,11 +196,13 @@
             }
         },
         less: {
-            options: {
-                yuicompress: true
-            },
-            files: {
-                "ng-grid.css": "src/less/ng-grid.less"
+            build: {
+                options: {
+                    // yuicompress: true
+                },
+                files: {
+                    "ng-grid.css": ["src/less/global.less"]
+                }
             }
         }
     });
