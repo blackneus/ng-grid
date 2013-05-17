@@ -296,10 +296,10 @@
   border-bottom: 1px solid #d4d4d4;
 }
 .ngRow.odd {
-  background-color: #f3f3f3;
+  background-color: #fdfdfd;
 }
 .ngRow.even {
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
 }
 .ngRow.selected {
   background-color: #c9dde1;
