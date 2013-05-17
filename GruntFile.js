@@ -228,14 +228,14 @@
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Old default task
-    grunt.registerTask('build', ['ngtemplates', 'concat', 'uglify', 'clean']);
+    grunt.registerTask('build', ['less', 'ngtemplates', 'concat', 'uglify', 'clean']);
 
     // Default task(s).
     grunt.registerTask('default', 'No default task', function() {
         grunt.log.write('The old default task has been moved to "build" to prevent accidental triggering');
     });
 
-    grunt.registerTask('debug', ['ngtemplates', 'concat:debug', 'clean']);
-    grunt.registerTask('prod', ['ngtemplates', 'concat:prod', 'uglify', 'clean']);
+    grunt.registerTask('debug', ['less', 'ngtemplates', 'concat:debug', 'clean']);
+    grunt.registerTask('prod', ['less', 'ngtemplates', 'concat:prod', 'uglify', 'clean']);
     grunt.registerTask('version', ['ngtemplates', 'concat:version', 'uglify:version', 'clean']);
 };
